@@ -43,7 +43,7 @@ window.onload = () => {
             }
 
             if (math_out > 0 && math_store > 0 && price_val > 0) {
-                const result = price_val * (math_out / (math_out + math_store));
+                const result = price_val * (math_out / math_store);
                 store_price.value = Math.ceil(result);
             }
 
