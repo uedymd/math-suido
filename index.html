@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>水道代計算</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="./js/input.js"></script>
+</head>
+
+<body>
+
+    <div class="block__body">
+        <div class="block__wrap">
+            <div class="block__title">
+                <h1>水道代計算表</h1>
+                <div class="block__columns">
+                    <div class="block__title--sub">
+                        <h2>外のメーター（店の使用量）</h2>
+                    </div>
+                    <div class="block__column">
+                        <div class="block__input">
+                            <label for="this_out">今月</label><input type="input" name="this_out" id="this_out">
+                        </div>
+                    </div>
+                    <div class="block__column">
+                        <div class="block__input">
+                            <label for="prev_out">先月</label><input type="input" name="prev_out" id="prev_out">
+                        </div>
+                    </div>
+                </div>
+                <div class="block__columns">
+                    <div class="block__title--sub">
+                        <h2>店のメーター（全体の使用量）</h2>
+                    </div>
+                    <div class="block__column">
+                        <div class="block__input">
+                            <label for="this_store">今月</label><input type="input" name="this_store" id="this_store">
+                        </div>
+                    </div>
+                    <div class="block__column">
+                        <div class="block__input">
+                            <label for="prev_store">先月</label><input type="input" name="prev_store" id="prev_store">
+                        </div>
+                    </div>
+                </div>
+                <div class="block__all">
+                    <div class="block__columns">
+                        <div class="block__title--sub">
+                            <h2>全体の水道使用量</h2>
+                        </div>
+                        <div class="block__math">
+                            <div class="block__input block__input--all-math">
+                                <input type="input" disabled="disabled">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="block__price">
+                    <div class="block__columns">
+                        <div class="block__title--sub">
+                            <h2>全体の水道料金</h2>
+                        </div>
+                        <div class="block__math">
+                            <div class="block__input block__input--all-price">
+                                <input type="input" name="price_all" id="price_all">円
+                            </div>
+                            <p>水道料金表<strong></strong>を見て入力してください。</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="block__price">
+                    <div class="block__columns">
+                        <div class="block__title--sub">
+                            <h2>お店に請求する水道料</h2>
+                        </div>
+                        <div class="block__math">
+                            <div class="block__input block__input--all-store">
+                                <input type="text" disabled="disabled">円
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
