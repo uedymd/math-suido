@@ -24,6 +24,8 @@ window.onload = () => {
             const price_val = Number(price.value);
             const math_store = Number(this_store.value) - Number(prev_store.value);
             const math_out = Number(this_out.value) - Number(prev_out.value);
+            const text = document.querySelector('.block__math p strong');
+            console.log(text);
             elem.value = changeVal;
 
             if (prev_out.value !== '' && this_out.value !== '') {
@@ -36,8 +38,8 @@ window.onload = () => {
                     alert('水道量がマイナスです。')
                 } else {
                     all_math.value = math_store;
+                    text.textContent = math_store;
                 }
-                const text = document.querySelector('.block__input--all-price p strong');
             }
 
             if (math_out > 0 && math_store > 0 && price_val > 0) {
